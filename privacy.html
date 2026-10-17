@@ -3,19 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy – Gemi YT Creator</title>
+<title>Privacy Policy – Floru Studio</title>
 <style>
-  :root { --text:#1f2328; --muted:#59636e; --bg:#ffffff; --accent:#0969da; --line:#d1d9e0; }
-  @media (prefers-color-scheme: dark) { :root { --text:#e6edf3; --muted:#9198a1; --bg:#0d1117; --accent:#4493f8; --line:#3d444d; } }
+  :root { --text:#1f2328; --muted:#59636e; --bg:#ffffff; --card:#f6f8fa; --accent:#0969da; --line:#d1d9e0; }
+  @media (prefers-color-scheme: dark) { :root { --text:#e6edf3; --muted:#9198a1; --bg:#0d1117; --card:#161b22; --accent:#4493f8; --line:#3d444d; } }
   body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
   main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  nav { margin-bottom:32px; font-size:.95rem; }
+  nav a { margin-right:16px; }
+  a { color:var(--accent); }
   h1 { font-size:2rem; margin:0 0 4px; }
   h2 { font-size:1.25rem; margin:36px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
   .meta { color:var(--muted); margin:0 0 24px; }
-  a { color:var(--accent); }
-  nav { margin-bottom:32px; font-size:.95rem; }
-  nav a { margin-right:16px; }
+  .lead { font-size:1.15rem; color:var(--muted); margin:0 0 32px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .card strong { display:block; margin-bottom:4px; }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
   li { margin:4px 0; }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; }
+  th, td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
 </style>
 </head>
 <body>
@@ -23,31 +31,34 @@
 <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Gemi YT Creator · Last updated: October 17, 2026</p>
+<p class="meta">Floru Studio · Last updated: October 17, 2026</p>
 
-<p>Gemi YT Creator ("the App", "we", "us") is a personal tool built and operated by an individual developer, Linh Hoang. It helps the developer manage and schedule uploads of video content to YouTube channels that the developer owns. This Privacy Policy explains what information the App accesses, how it is used, stored, and shared, and how you can revoke access or request deletion.</p>
+<p>Floru Studio ("the App", "we", "us") is a personal tool built and operated by an individual developer, Linh Hoang. It helps the developer manage YouTube channels that the developer owns. This Privacy Policy explains what information the App accesses, how it is used, stored, and shared, and how you can revoke access or request deletion.</p>
 
 <h2>1. Use of YouTube API Services</h2>
-<p>The App uses YouTube API Services to upload videos and manage video metadata on YouTube. By using the App, you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>.</p>
+<p>The App uses YouTube API Services, including the YouTube Data API and the YouTube Analytics API. By using the App, you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>.</p>
 <p>Google's handling of your data is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
 <h2>2. Information we access and collect</h2>
-<p>When you authorize the App with your Google account through Google OAuth, the App may access:</p>
-<ul>
-  <li><strong>OAuth access and refresh tokens</strong> issued by Google, used to call the YouTube Data API on your behalf.</li>
-  <li><strong>Basic channel information</strong> such as channel ID, channel title, and thumbnail, used to identify which channel content is uploaded to.</li>
-  <li><strong>Video metadata</strong> you create in the App, such as titles, descriptions, tags, category, privacy status, and scheduled publish time.</li>
-  <li><strong>Upload results</strong> returned by the API, such as video IDs and processing status.</li>
-</ul>
+<p>When you authorize the App with your Google account through Google OAuth, the App may access the following, depending on the permissions you grant:</p>
+<table>
+  <tr><th>Data</th><th>Purpose</th></tr>
+  <tr><td>OAuth access and refresh tokens issued by Google</td><td>Calling YouTube APIs on your behalf without signing in each time</td></tr>
+  <tr><td>Channel information (channel ID, title, avatar, banner, subscriber count)</td><td>Identifying the connected channel and showing it in the App</td></tr>
+  <tr><td>Video list and video details, including unlisted and private videos (title, description, thumbnail, privacy status, view/like/comment counts)</td><td>Showing the channel's video library and status</td></tr>
+  <tr><td>Video metadata you create in the App (title, description, tags, category, privacy status, scheduled time)</td><td>Uploading and publishing videos</td></tr>
+  <tr><td>YouTube Analytics reports (views, watch time, subscriber changes)</td><td>Tracking channel performance and monetization progress</td></tr>
+  <tr><td>Comments on the channel's videos</td><td>Reading and replying to comments from within the App</td></tr>
+</table>
 <p>The App does not access your Google password, payment information, contacts, email, or any data unrelated to the YouTube functions described above.</p>
 
 <h2>3. How we use the information</h2>
 <ul>
-  <li>To upload videos and set their metadata on the authorized YouTube channel.</li>
-  <li>To schedule publishing and display upload status inside the App.</li>
-  <li>To keep the connection to the channel active without re-authorizing every time.</li>
+  <li>To upload videos and manage their metadata and publishing schedule on the authorized channel.</li>
+  <li>To display channel, video, analytics, and comment information inside the App.</li>
+  <li>To generate improvement suggestions for the channel based on its aggregated statistics.</li>
 </ul>
-<p>The information is used only to provide these features. It is not used for advertising, profiling, or sold to anyone.</p>
+<p>The information is used only to provide these features. It is not used for advertising or profiling, and it is never sold.</p>
 
 <h2>4. Storage and retention</h2>
 <ul>
@@ -57,10 +68,12 @@
 </ul>
 
 <h2>5. Sharing and disclosure</h2>
-<p>We do not sell, rent, or share your information with third parties. Data is sent only to Google/YouTube through the official APIs in order to perform the actions you request. We may disclose information only if required by law.</p>
+<p>We do not sell or rent your information. Data is sent to Google/YouTube through the official APIs to perform the actions you request.</p>
+<p>To generate channel suggestions, aggregated channel and video statistics (such as view counts and watch time) and video titles may be sent to a third-party AI service provider for processing. OAuth tokens, account credentials, and personal contact information are never shared. Such providers process the data only to return the result and do not receive access to your YouTube account.</p>
+<p>We may also disclose information if required by law.</p>
 
 <h2>6. Cookies and device information</h2>
-<p>The App does not place cookies or similar tracking technologies on your device, and does not collect device identifiers for tracking. This website itself does not use cookies or analytics.</p>
+<p>The App does not place cookies or similar tracking technologies on your device, and does not collect device identifiers for tracking. This website does not use cookies or analytics.</p>
 
 <h2>7. Revoking access</h2>
 <p>You can revoke the App's access to your Google account at any time through the <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener">Google security settings page</a>. After revocation, the App can no longer access your YouTube data.</p>
