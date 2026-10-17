@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemi YT Creator</title>
+<meta name="description" content="Gemi YT Creator – a personal tool for managing and scheduling video uploads to the developer's own YouTube channels.">
+<style>
+  :root { --text:#1f2328; --muted:#59636e; --bg:#ffffff; --card:#f6f8fa; --accent:#0969da; --line:#d1d9e0; }
+  @media (prefers-color-scheme: dark) { :root { --text:#e6edf3; --muted:#9198a1; --bg:#0d1117; --card:#161b22; --accent:#4493f8; --line:#3d444d; } }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  nav { margin-bottom:40px; font-size:.95rem; }
+  nav a { margin-right:16px; }
+  a { color:var(--accent); }
+  h1 { font-size:2.2rem; margin:0 0 8px; }
+  .lead { font-size:1.15rem; color:var(--muted); margin:0 0 32px; }
+  h2 { font-size:1.25rem; margin:36px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .card strong { display:block; margin-bottom:4px; }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
+  ol li, ul li { margin:4px 0; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+
+<h1>Gemi YT Creator</h1>
+<p class="lead">A personal tool for preparing, scheduling, and uploading videos to YouTube channels owned by the developer.</p>
+
+<h2>About</h2>
+<p>Gemi YT Creator is built and operated by an individual developer, Linh Hoang. It is used internally to manage the developer's own YouTube channels. It is not a public service, and no third-party users connect their accounts to it.</p>
+
+<h2>Features</h2>
+<div class="grid">
+  <div class="card"><strong>Video upload</strong><p>Uploads finished videos to the developer's channel through the official YouTube Data API.</p></div>
+  <div class="card"><strong>Metadata management</strong><p>Sets title, description, tags, category, and privacy status for each video.</p></div>
+  <div class="card"><strong>Scheduling</strong><p>Schedules publish times so content goes live at a planned moment.</p></div>
+  <div class="card"><strong>Status tracking</strong><p>Shows upload and processing status returned by YouTube.</p></div>
+</div>
+
+<h2>How it uses YouTube</h2>
+<ol>
+  <li>The channel owner signs in with Google OAuth and grants upload permission.</li>
+  <li>The App uploads videos and sets their metadata using YouTube API Services.</li>
+  <li>Access can be revoked at any time from the <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener">Google security settings page</a>.</li>
+</ol>
+<p>The App uses YouTube API Services. By using it, you agree to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> for how Google handles data.</p>
+
+<h2>Policies</h2>
+<ul>
+  <li><a href="privacy.html">Privacy Policy</a></li>
+  <li><a href="terms.html">Terms of Service</a></li>
+</ul>
+
+<h2>Contact</h2>
+<p>Linh Hoang<br>Email: <a href="mailto:florustudio@gmail.com">florustudio@gmail.com</a></p>
+
+<footer>© 2026 Linh Hoang · Gemi YT Creator is not affiliated with or endorsed by YouTube or Google.</footer>
+</main>
+</body>
+</html>
